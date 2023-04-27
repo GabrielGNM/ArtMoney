@@ -27,9 +27,5 @@ O ARTMoney nasceu com o intuito de ajudar diferentes grupos de pessoas a realiza
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
-
-# Apresentação
-
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="./src"> Código Fonte</a></li>
 
