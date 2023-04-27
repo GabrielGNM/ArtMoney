@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cotação de Moedas</title>
+    <style>
+        /* Estilos CSS para a página */
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        .container {
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            padding: 20px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+        }
+
+        .form {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 20px;
+
+        }
+
+        .form input[type="number"] {
+
+            width: 100px;
+
+            padding: 5px;
+
+        }
+
+        .form select {
+
+            padding: 5px;
+
+            margin-left: 10px;
+
+        }
+
+        .result {
+
+            text-align: center;
+
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cotação de Moedas</h1>
+        <div class="form">
+            <input type="number" id="amount" placeholder="Valor">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <select id="toCurrency">
+                <option value="BRL">BRL</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <button onclick="convertCurrency()">Converter</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <script>
+        // Função para converter a moeda
+        function convertCurrency() {
+
+            let amount = document.getElementById("amount").value;
+
+            let fromCurrency = document.getElementById("fromCurrency").value;
+
+            let toCurrency = document.getElementById("toCurrency").value;
+
+            // Fazer a requisição à API de cotação de moedas
+            let xhr = new XMLHttpRequest();
+
+            xhr.open("GET", `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`);
+
+            xhr.onload = function () {
+
+                if (xhr.status === 200) {
+
+                    let response = JSON.parse(xhr.responseText);
+
+                    let exchangeRate = response.rates[toCurrency];
+
+                    let convertedAmount = amount * exchangeRate;
+
+                    document.getElementById("result").innerText = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+
+                } else {
+
+                    document.getElementById("result").innerText = "Erro ao converter moeda.";
+
+                }
+
+            };
+
+            xhr.send();
+
+        }
+
+    </script>
+</body>
+
+</html>
