@@ -8,7 +8,7 @@
 
 O ARTMoney nasceu com o intuito de ajudar diferentes grupos de pessoas a realizar seu objetivo financeiro. Sendo assim, nos disponibilizamos conteúdos gratuitos de qualidade para pessoas endividadas, sem dívidas, e investidores. A Plataforma definirá perfis selecionáveis e, com base na escolha do usuário, apresentará soluções referente a cada caso! Esse processo facilita a busca do conteúdo desejado dentro do site e possibilita que o usuário atenda sua necessidade com mais eficiência.
 
-[Link para o sistema](https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-1-e1-proj-web-t1-juntamoney/src/index.html)
+[Link para o sistema](https://icei-puc-minas-pmv-si.github.io/TemplateHTML/src/index.html)
 
 
 ## Integrantes
