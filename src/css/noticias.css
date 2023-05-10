@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reportagem {
+    flex-basis: 33.33%;
+    width: 33%;
+    padding-right: 5%;
+    padding-left: 5%;
+}

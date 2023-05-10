@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
 }
-
 .main-content {
     display: flex;
     flex-direction: column;
@@ -11,37 +10,20 @@
     background-color: #fff;
     max-height: 1974px;
     padding: 32px;
-    margin-left: 300px;
+    margin-left: 100px;
     width: 100%;
-    width: 846px;
-}
-
-.main-contentleftmenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
-    margin-left: 0px;
-}
-
-.main-background {
-    padding: 48px;
-    max-height: 2300px;
-    width: 100%;
-    background-image: url('../img/pessoa_calculadora.jpg');
-    background-size: cover;
-    background-position: 0px -50px;
+    width: 1500px;
 }
 
 .main-video {
-    padding: 48px;
-    max-height: 560px;
-    max-width: 315;
-    margin-left: 60px;
+    padding: 35px;
+    max-height: 500px;
+    max-width: 200;
+    margin-left: 10px;
 }
 
 .main-destaquetexto {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .main-title {
@@ -60,12 +42,12 @@
 }
 
 .main-text {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 25px;
 }
 
 .main-question {
-    font-size: 10px;
+    font-size: 15px;
     margin: 20px 0px;
     align-items: left;
 }
@@ -184,4 +166,29 @@
     padding: 5px;
     color: #fff;
     margin: 5px;
+}
+.testocp{
+    font-size: 20px;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.pergunt{
+    
+        font-size: 20px;
+}
+
+.tm2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    max-height: 1974px;
+    padding: 32px;
+    margin-left: 100px;
+    width: 100%;
+    width: 1500px;
 }

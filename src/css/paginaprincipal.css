@@ -21,7 +21,7 @@
   padding: 48px;
   height: 670px;
   width: 100%;
-  background-image: url('../img/pessoa_calculadora.jpg');
+  background-image: url('../img/imagemprincipal2.jpg');
   background-size: cover;
 }
 
@@ -30,7 +30,10 @@
 }
 
 .main-button {
+  background-color: black;
   text-align: center;
+  border-radius: 10px;
+  color: white;
 }
 
 .main-text {
@@ -96,13 +99,13 @@
 }
 
 .profile-optionContent--green {
-  border: 24px solid black;
-  margin-left: 10px;
+  border: 8px solid black;
+  margin-left: 8px;
 }
 
 .profile-optionContent--blue {
-  border: 24px solid black;
-  margin-left: 10px;
+  border: 8px solid black;
+  margin-left: 8px;
 }
 
 .profile-title {
@@ -110,6 +113,7 @@
 }
 
 .profile-text {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 16px;
   font-size: 16px;
 }
@@ -144,3 +148,9 @@
     max-width: none;
   }
 }
+ /*Css Footer*/ 
+.footer {
+  padding: 20px;
+  background-color: #F3F0F0
+}
+

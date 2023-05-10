@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>ArtMoney</title>
+    <title>Junta Money</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,172 +11,170 @@
     <link rel="stylesheet" href="./css/investimentos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="./js/api.js"></script>
-    
+
 
 </head>
 
 <body onload="fetchApiData()">
     <header class="header">
         <nav class="navigation">
-            <a href="./index.html" class="header-title">
-                ArtMoney
-            </a>
+            <a href="./index.html" class="header-title"><img src=".\img\logoV1.png" alt="LogoArtMoney"
+                    class="header-title"></a>
             <ul class="navigation-list">
-                <li><a class="button button--black button--nav" href="./calculadora.html">Calculadora</a></li>
-                <li><a class="button button--black button--nav u-hideOnMobile" href="./investimentos.html">Investimentos</a></li>
-                <li><a class="button button--black u-hideOnMobile" href="./quemsomos.html">Quem somos</a></li>
+
+                <li><a class="button button--black button--nav u-hideOnMobile" href="./cotarMoedas.html">Cotar
+                        Moedas</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="./calculadora.html">Calculadora
+                        Financeira</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="podcasts.html">Podcasts</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="noticias.html">Notícias</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="./quemsomos.html">Quem Somos</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main class="main">
-        
-        <div class="main-background">
-           
-            <div class="main-content">
-                
-                
-                
-                    <h1 class="main-title">
-                        Perfis de investidores
+    <main>
+        <div class="main-content">
+            <section class="main-title-section">
+                <h1 class="main-title">
+                    Perfis de investidores
+                </h1>
+
+                <p>
+                    O perfil do investidor é uma caracterização que define as características, objetivos, comportamentos
+                    e tolerâncias do investidor.
+                    É importante ter esse entendimento para orientar as escolhas e estratégias de investimento,
+                    minimizando as possibilidades de equívocos e perdas financeiras. Os perfis de investidores mais
+                    comuns são:
+                </p>
+            </section>
+
+            <section class="economic-type">
+                <img src="img/investimentos/conservador.jpg" alt="Cofre de porquinho">
+
+                <div class="economic-description">
+                    <h1>
+                        Conservador
                     </h1>
-                    
-                    <p class="main-text">
-                        Aqui você encontra os três tipos de perfis de investidores. Com qual deles você mais se
-                    identifica?
+
+                    <p>
+                        Investidor que dá prioridade à segurança dos recursos e prefere investimentos de baixo risco.
+                        Normalmente busca aplicações em renda fixa ou títulos públicos.
                     </p>
-                    <div class ="main-video">
-                        <img src="img/investimentos/conservador.jpg"  width="560" height="315" alt="milhaeiro">
+
+                    <div class="main-examples">
+                        <h3>
+                            Exemplos de investimentos:
+                        </h3>
+
+                        <p>
+                            CDB, Tesouro Direto, Poupança.
+                        </p>
                     </div>
-
-                
-                   <p class="main-text">
-                   <div class="main-destaquetexto"> Conservador</div>
-                   Este perfil é caracterizado por priorizar a preservação do dinheiro (capital) e assumir
-                   poucos riscos, de modo a evitar perdas em seus investimentos. Geralmente, pessoas com pouca
-                   experiência na área de investimentos encontram, no perfil conservador, caminhos alternativos
-                   para preservar e gerar renda a partir de seu capital.
-                  </p>
-                  <p><b>Exemplos de investimentos:</b> CDB, Tesouro Direto, Poupança.</p>
-
-                  
-
-                <div class ="main-video">
-                    <img src="img/investimentos/moderado.jpg"  width="560" height="315" alt="milhaeiro">
                 </div>
+            </section>
 
-            
-               <p class="main-text">
-               <div class="main-destaquetexto"> Moderado</div>
-               Este perfil é caracterizado por equacionar bem investimentosa de risco baixo e moderado.
-                                Nessa perspectiva, pessoas que priorizam uma segurança nos investimentos, mas também buscam
-                                uma maior rentabilidade, encontram no perfil moderado uma oportunidade de arriscar um pouco
-                                mais e ter um retorno expressivo na rentabilidade de seus investimentos. </p>
-              <p><b>Exemplos de investimentos:</b>CDB, Fundos de Renda Fixa, Fundos de Ações, Tesouro Direto.</p>
+            <section class="economic-type">
+                <img src="img/investimentos/moderado.jpg" alt="Balança com moedas">
+
+                <div class="economic-description">
+                    <h1>
+                        Moderado
+                    </h1>
+
+                    <p>
+                        Investidor que tem alguma disposição a investir em aplicações de risco moderado,
+                        buscando um equilíbrio entre rentabilidade e segurança.
+                        Pode optar por investimentos em renda fixa com certa exposição a bolsa de valores.
+                    </p>
 
 
-              
+                    <div class="main-examples">
+                        <h3>
+                            Exemplos de investimentos:
+                        </h3>
 
-
-                <div class ="main-video">
-                <img src="img/investimentos/agressivo.png"   width="560" height="315" alt="milhaeiro">
-
-                 </div>
-
-        
-                <p class="main-text">
-                <div class="main-destaquetexto"> Agressivo</div>
-                Este perfil é caracterizado por assumir altos riscos em sua carteira de investimentos, no
-                intuito de obter a maior rentabilidade possível. Pessoas que têm este perfil de investidor
-                normalmente conhecem bem o produto a ser investido e não estão muito sensíveis às oscilações
-                do mercado. </p>
-                <p><b>Exemplos de investimentos:</b> Fundo de Ações, Fundos Imobiliários, Fundos de Multimercado,
-                    Fundos de Renda Fixa.</p>
-                  
+                        <p>
+                            CDB, Fundos de Renda Fixa, Fundos de Ações, Tesouro Direto.
+                        </p>
+                    </div>
                 </div>
-                <!--video -->
+            </section>
 
-                <div class="api-background">
-                    
-                    <div class="api-box">
-                        <img src="https://static.todamateria.com.br/upload/ba/nd/bandeira_americana_bb.jpg" width="40" height="30">
-                        <span>USD-BRL</span>
-                        <span class="api-items"  id="fill_list1"></span>
-                        
-                      
+            <section class="economic-type">
+                <img src="img/investimentos/agressivo.png" alt="Pessoa numa corda bamba">
+
+                <div class="economic-description">
+                    <h1>
+                        Arrojado
+                    </h1>
+
+                    <p>
+                        Investidor que busca rentabilidade acima da média, mesmo que isso signifique maiores riscos.
+                        Comporta-se de forma mais ativa e pode aplicar seu capital em ações,
+                        fundos de investimento em ações ou mercado de câmbio.
+                    </p>
+
+                    <div class="main-examples">
+                        <h3>
+                            Exemplos de investimentos:
+                        </h3>
+
+                        <p>
+                            Fundo de Ações, Fundos Imobiliários, Fundos de Multimercado, Fundos de Renda Fixa.
+                        </p>
                     </div>
+                </div>
+            </section>
 
-                    <div class="api-box">
-                        <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/1.png" width="30" height="30">
-                        <span>BTC-BRL</span>
-                        <span class="api-items"  id="fill_list2"></span>
-                        <span>mil</span>
-                        
+            <section class="economic-type">
+                <img src="img/investimentos/agressivo.png" alt="Pessoa numa corda bamba">
 
+                <div class="economic-description">
+                    <h1>
+                        Especulativo
+                    </h1>
+
+                    <p>
+                        Investidor que é altamente agressivo e busca obter grande lucro em pouco espaço de tempo,
+                        operando em operações de alta volatilidade, sem muitas preocupações com o possível risco
+                        envolvido.
+                    </p>
+
+                    <div class="main-examples">
+                        <h3>
+                            Exemplos de investimentos:
+                        </h3>
+
+                        <p>
+                            Fundo de Ações, Fundos Imobiliários, Fundos de Multimercado, Fundos de Renda Fixa.
+                        </p>
                     </div>
+                </div>
+            </section>
 
-                    <div class="api-box">
-                      
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Euro_symbol.svg/1200px-Euro_symbol.svg.png" width="30" height="30">
-                        <span>EUR-BRL</span>
-                        <span class="api-items"  id="fill_list3"></span>
-                    </div>
-
-                    <div class="api-box">
-                      
-                        <img src="https://investidor10.com.br/conteudo/wp-content/uploads/2022/04/0xe.png" width="30" height="30">
-                        <span>ETH-BRL</span>
-                        <span class="api-items"  id="fill_list4"></span>
-                        <span>mil</span>
-                    </div>
-
-                    <div class="api-box">
-                      
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/255px-Flag_of_the_People%27s_Republic_of_China.svg.png" width="30" height="30">
-                        <span>CNY-BRL</span>
-                        <span class="api-items"  id="fill_list5"></span>
-                        
-                    </div>
-    
-             
-                <div>
-            </div>
-
-           
-          
+            <section class="main-title-section">
+                <p>
+                    O conhecimento detalhado do perfil do investidor é importante para alinhar a carteira de
+                    investimentos com seus objetivos,
+                    planos e preferências, reduzindo as possibilidades de perdas e aumentando as chances de sucesso nos
+                    investimentos.
+                </p>
+            </section>
         </div>
-      
-    <footer class="footer">
-        <section class="footer-logo">
-            <a href="./index.html" class="header-title">
-                ArtMoney
-            </a>
-        </section>
-        <div class="footer-content">
-            <section class="footer-section">
-                <strong class="footer-sectionTitle">Sobre o site</strong>
-                <ul class="footer-sectionList">
-                    <li class="footer-sectionItem">
-                        <a href="./quemsomos.html">Quem Somos</a>
-                    </li>
-                    <li class="footer-sectionItem">
-                        <a href="mailto:example@gmail.com">Fale Conosco</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer-section">
-                <strong class="footer-sectionTitle">Veja também</strong>
-                <ul class="footer-sectionList">
-                    <li class="footer-sectionItem">
-                        <a href="">Investimentos</a>
-                    </li>
-                    <li class="footer-sectionItem">
-                        <a href="./calculadora.html">Calculadora</a>
-                    </li>
-                </ul>
-            </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <div class="midias">
+                <img src="img/Facebook.png" alt="Facebook.png">
+                <img src="img/ig.png" alt="instagram icnone">
+                <p class="Copyright"> © Copyright 2023 - ArtMoney - Todos os direitos reservados </p>
+            </div>
         </div>
     </footer>
 </body>
