@@ -41,6 +41,7 @@
   line-height: 25px;
 }
 
+/* Não reconheci de onde é esse css 
 .main-question {
   font-size: 10px;
   margin: 20px 0px;
@@ -57,7 +58,7 @@
   font-size: 25px;
   margin-right: 50px;
 }
-
+*/
 .profile-content {
   margin-top: 48px;
   margin-bottom: 48px;
@@ -96,14 +97,6 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 0px 10px 10px 0px;
-}
-
-.profile-optionContent--green {
-  border: 8px solid black;
-  margin-left: 8px;
-}
-
-.profile-optionContent--blue {
   border: 8px solid black;
   margin-left: 8px;
 }
@@ -148,9 +141,5 @@
     max-width: none;
   }
 }
- /*Css Footer*/ 
-.footer {
-  padding: 20px;
-  background-color: #F3F0F0
-}
+
 

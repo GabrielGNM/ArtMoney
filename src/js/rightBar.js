@@ -2,8 +2,6 @@
 const rightButton = document.querySelector(".right-button");
 rightButton.addEventListener("click", function () {
 
-  
-
   const rightBar = document.querySelector(".right-bar");
   const currentBar = parseInt(getComputedStyle(rightBar).right);
   if (currentBar === 0) {

@@ -23,7 +23,7 @@ loginButton.addEventListener("click", function (event) {
   }
   if (isMatchFound) {
     alert(`Login realizado com sucesso!\nNome: ${users[index].name}\nE-mail: ${users[index].email}`);
-    
+
     var sessionUser = {
       name: users[index].name,
       password: users[index].password,
