@@ -1,6 +1,6 @@
 
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
 const loginButton = document.getElementById('loginBtn');
 
 loginButton.addEventListener("click", function (event) {
@@ -10,7 +10,7 @@ loginButton.addEventListener("click", function (event) {
   var users = JSON.parse(usersJSON);
 
   // Check if a user with the given email exists in the list of users
-  var emailToCheck = emailInput.value;
+  var emailToCheck = emailInput.value.toLowerCase();
   var passwordToCheck = passwordInput.value;
   isMatchFound = false;
 
@@ -23,7 +23,6 @@ loginButton.addEventListener("click", function (event) {
   }
   if (isMatchFound) {
     alert(`Login realizado com sucesso!\nNome: ${users[index].name}\nE-mail: ${users[index].email}`);
-
     var sessionUser = {
       name: users[index].name,
       password: users[index].password,
@@ -54,7 +53,7 @@ document.getElementById('cancelBtn').addEventListener('click', function () {
 document.getElementById('cadastroTelaBtn').addEventListener('click', function () {
   document.getElementById('email').removeAttribute('required');
   document.getElementById('password').removeAttribute('required');
-  window.location.href = './cadastro.html';
+  window.location.href = './cadastroUsuario.html';
 });
 
 

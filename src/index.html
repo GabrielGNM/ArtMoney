@@ -31,17 +31,22 @@
                 <li><a class="button button--black button--nav u-hideOnMobile" href="noticias.html">Notícias</a></li>
                 <li><a class="button button--black button--nav u-hideOnMobile" href="./quemsomos.html">Quem Somos</a>
                 </li>
-                <li><a class="button--login button" href="./login.html">Entrar</a></a></li>
+                <li><a class="button--login button" id="button--login" href="./login.html">Entrar</a></a></li>
             </ul>
-            <a id="btn-entrar" class="right-button"><img src=".\img\perfil-de-usuario.png" alt="Perfil"
+            <div id="test" class="right-button">
+                
+                <a id="btn-entrar" class="right-button"><img src=".\img\perfil-de-usuario.png" alt="Perfil"
                     class="imgPerfil right-button"></a>
+                <a id="userName"></a>
+            </div>
+            
         </nav>
     </header>
 
     <div class="right-bar">
         <div class="right-content">
             <h2 id="tituloRightBar">Logue para Ver o Conteudo</h2>
-            <p id="paragrafoRightBar"></p>
+            <p id="nomeUsuario"></p>
         </div>
     </div>
 
@@ -110,8 +115,8 @@
             </div>
         </div>
     </main>
-    
-    <script src="./js/rightBar.js"></script>
+
+    <script src="./js/paginaPrincipal.js"></script>
 </body>
 <footer>
     <div class="rodape">

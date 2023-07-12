@@ -42,7 +42,7 @@ a {
 
 .header-title:hover {
   color: rgb(37, 37, 36);
-  
+
 }
 
 .navigation {
@@ -80,21 +80,21 @@ a {
   font-size: 1.8rem;
 }
 
-/*Css Footer*/ 
+/*Css Footer*/
 
 .rodape {
+  bottom: 0;
   width: 100%;
   background-color: #F3F0F0;
   padding: 20px;
-  bottom: 0;
 }
 
-.midias{
+.midias {
   text-align: center;
   padding: 5px;
 }
 
-.Copyright{
+.Copyright {
   text-align: center;
 }
 
@@ -106,6 +106,10 @@ a {
   cursor: pointer;
 }
 
+#userName{
+  display: none;
+}
+
 .button:disabled {
   cursor: not-allowed;
 }
@@ -115,14 +119,14 @@ a {
 
 }
 
-.navigation-list .button--login{
-  
+.navigation-list .button--login {
+
   color: white;
   background-color: rgb(37, 37, 36);
   border-radius: 10px;
 }
 
-.button--login:hover{
+.button--login:hover {
   background-color: rgb(51, 51, 51);
 }
 
@@ -153,7 +157,7 @@ a {
 }
 
 .base-title {
- font-size: 50px;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -178,7 +182,9 @@ a {
     margin-bottom: 16px;
   }
 }
+
 /* Style for the button */
+
 .right-button {
   font-weight: 600;
   font-size: 16px;
@@ -188,11 +194,12 @@ a {
   border-radius: 20px;
   cursor: pointer;
 }
-.btn-entrar{
+
+.btn-entrar {
   text-align: center;
 }
 
-.right-button:hover{
+.imgPerfil:hover {
   background-color: rgb(37, 37, 36);
 }
 
@@ -200,8 +207,8 @@ a {
 .right-bar {
   position: fixed;
   top: 120px;
-  right: -600px;
-  width: 600px;
+  right: -400px;
+  width: 400px;
   height: 100%;
   background-color: #eee;
   transition: right 0.3s ease-in-out;
@@ -209,12 +216,48 @@ a {
 
 /* Style for the content inside the right bar */
 .right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
+/* Style for the button inside RightBar*/
+.btnRightBar {
 
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
-/*Página Notícias*/ 
+.btnRightBar:hover {
+  background-color: rgb(37, 37, 36);
+}
+
+#btnSair {
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#btnSair:hover {
+  background-color: rgb(37, 37, 36);
+}
+
+/*Página Notícias*/
 /* Definindo as cores */
 
 /*campo comentário*/

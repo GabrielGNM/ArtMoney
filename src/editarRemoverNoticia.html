@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Comentários</title>
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/comentario.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="./css/base.css">
+<body> 
     <header class="header">
         <nav class="navigation">
             <a href="./index.html" class="header-title"><img src=".\img\logoV1.png" alt="LogoArtMoney"
@@ -21,30 +16,47 @@
                 <li><a class="button button--black button--nav u-hideOnMobile" href="noticias.html">Notícias</a></li>
                 <li><a class="button button--black button--nav u-hideOnMobile" href="./quemsomos.html">Quem Somos</a>
                 </li>
+                <li><a class="button--login button" id="button--login" href="./login.html">Entrar</a></a></li>
             </ul>
+            
         </nav>
     </header>
-	<h1>Comentários</h1>
-	<form>
-        <div id="post-container">
-            <h3>Titulo:</h2>
-            <h2 id="PostTitle">Post Title</h2>
-          </div>
-		<label for="comment">Comentário:</label>
-		<textarea id="comment" placeholder="Digite seu comentário aqui" required></textarea>
-		<button class="btcm" type="submit" id="submit-button">Enviar</button>
-	</form>
-	<div id="comment-section"></div>
-    <footer>
-        <div class="rodape">
-            <div class="midias">
-                <img src="img/Facebook.png" alt="Facebook.png">
-                <img src= "img/ig.png" alt="instagram icnone">
-              <p class="Copyright">  © Copyright 2023 - ArtMoney - Todos os direitos reservados </p>
-            </div>
-        </div>
-    </footer>
-    <script src="./js/comentario.js"></script>
-	
+
+    <head>
+
+        <title>Editar ou Remover Noticias</title>
+        <link rel="stylesheet" type="text/css" href="./css/editarRemoverNoticia.css">
+        <style>
+            /* Some basic CSS styles for the page layout */
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .noticias-container {
+                margin-bottom: 20px;
+            }
+
+            .noticias-container input[type="text"],
+            .noticias-container button {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <h1>Editar ou Remover Noticias</h1>
+    <div id="noticiaEmEdicao"></div>
+    <div id="editForm"></div>
+
+
+    <!-- Container for displaying noticias -->
+    <div id="noticiasContainer" class="noticias-container">
+        <!-- Noticias will be dynamically added here -->
+    </div>
+
+    <!-- Form for adding new noticias -->
+
+
+    <script src="./js/editarRemoverNoticia.js"></script>
 </body>
+
 </html>

@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.content{
+  justify-content: center;
+}
+
 .text {
   font-size: 16px;
   line-height: 25px;
@@ -9,7 +13,9 @@
 }
 
 .page-content {
+  flex-grow: 1;
   max-width: 600px;
+  height: 70vh;
 }
 
 .input-gasto {
@@ -53,6 +59,10 @@
   margin-bottom: 8px;
 }
 
+.rodape{
+  position: fixed;
+}
+
 @media screen and (max-width: 767px) {
   .input-gasto {
     margin-right: 0;
@@ -62,7 +72,4 @@
   .form {
     width: 100%;
   }
-}
-.rodape {
-  position: fixed;
 }

@@ -41,24 +41,6 @@
   line-height: 25px;
 }
 
-/* Não reconheci de onde é esse css 
-.main-question {
-  font-size: 10px;
-  margin: 20px 0px;
-  align-items: left;
-}
-
-.menu {
-  width: 300px;
-  height: 0;
-  align-items: left;
-}
-
-.menu-title {
-  font-size: 25px;
-  margin-right: 50px;
-}
-*/
 .profile-content {
   margin-top: 48px;
   margin-bottom: 48px;
@@ -88,6 +70,12 @@
   border-radius: 10px 0px 0px 10px;
 }
 
+#userName{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+}
 .profile-optionContent {
   background-color: rgb(248, 249, 245);
   padding: 32px;
@@ -140,6 +128,26 @@
     min-width: initial;
     max-width: none;
   }
+
+
+
+
+  /* Style for the right bar */
+
+  .right-bar {
+    position: fixed;
+    top: 120px;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #eee;
+    transition: right 0.3s ease-in-out;
+  }
+
+  /* Style for the content inside the right bar */
+
+  .right-content {
+    padding: 20px;
+  }
+
 }
-
-

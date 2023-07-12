@@ -10,14 +10,16 @@ cadastroBtn.addEventListener('click', function createUser(event) {
 	const confirmPassword = document.getElementById('confirmPassword');
 	const typeInput = document.getElementById('type');
 
+	let str = emailInput.value.toLowerCase();
+
 
 	if (passwordInput.value !== confirmPassword.value) {
 		alert('As senhas não coincidem!');
 	} else {
-		alert(`Cadastro realizado com sucesso!\nNome: ${nameInput.value}\nE-mail: ${emailInput.value}`);
+		
 		const newUser = {
 			name: nameInput.value,
-			email: emailInput.value,
+			email: str,
 			type: typeInput.value,
 			password: passwordInput.value,
 		};
@@ -33,8 +35,8 @@ cadastroBtn.addEventListener('click', function createUser(event) {
 		  // Armazene a lista de objetos no localStorage
 		  localStorage.setItem('users', JSON.stringify(users));
 
-		
-
+		  alert(`Cadastro realizado com sucesso!\nNome: ${nameInput.value}\nE-mail: ${str}`);
+		  
 		window.location.href = './login.html';
 
 	}
